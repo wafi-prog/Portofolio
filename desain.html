@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Wafi Portfolio</title>
+  <link rel="stylesheet" href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" />
+  <link rel="stylesheet" href="https://unpkg.com/aos@2.3.4/dist/aos.css" />
+  <link rel="stylesheet" href="desain.css">
+</head>
+
+<body>
+  <header>
+    <a href="#" class="logo">Wafiyatin</a>
+    <nav id="navbar">
+      <a href="#home">Home</a>
+      <a href="#about">About</a>
+      <a href="#skills">Skills</a>
+      <a href="#footer">Contact</a>
+    </nav>
+    <div class="hamburger" id="hamburger"><i class='bx bx-menu'></i></div>
+  </header>
+
+  <section class="home" id="home">
+    <div class="home-content" data-aos="fade-right">
+      <h3>Hello, it's me</h3>
+      <h1>Wafiyatin Athiyyah</h1>
+      <h3>And I'm a <span>Developer</span></h3>
+      <p>I'm a back-end developer with a strong passion for clean code, API development, and scalable architecture.</p>
+      <a href="#about" class="btn-box">More About Me</a>
+    </div>
+  </section>
+
+  <section class="about" id="about" data-aos="fade-left">
+    <h2 class="section-title">About <span>Me</span></h2>
+    <div class="about-content">
+      <img src="fifi.png" alt="My Photo" class="about-img" />
+      <div class="about-card">
+        <p>
+          Halo! Saya adalah seorang web developer yang mahir berbahasa Indonesia dan fasih berbahasa Arab.
+          Memiliki latar belakang di bidang backend development, saya terbiasa membangun sistem yang kuat dan efisien.
+          <br><br>
+          Saya juga aktif dalam organisasi, berpengalaman memimpin tim, dan terbiasa melakukan presentasi melalui public
+          speaking.
+          Beberapa proyek yang pernah saya kerjakan meliputi pembuatan website dan aplikasi dari awal hingga selesai.
+          <br><br>
+          Saya percaya bahwa teknologi bukan hanya tentang kode, tapi juga tentang dampak.
+          Maka dari itu, saya selalu berusaha menciptakan solusi digital yang tidak hanya fungsional, tapi juga
+          bermanfaat.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <section class="skills" id="skills" data-aos="zoom-in">
+    <h2 class="section-title">My <span>Skills</span></h2>
+    <div class="skills-grid">
+      <div class="skill-box"><i class='bx bxl-html5'></i>
+        <p>HTML</p>
+      </div>
+      <div class="skill-box"><i class='bx bxl-css3'></i>
+        <p>CSS</p>
+      </div>
+      <div class="skill-box"><i class='bx bxl-javascript'></i>
+        <p>JavaScript</p>
+      </div>
+      <div class="skill-box"><i class='bx bxl-flutter'></i>
+        <p>Flutter</p>
+      </div>
+      <div class="skill-box"><i class='bx bxl-php'></i>
+        <p>PHP</p>
+      </div>
+      <div class="skill-box"><i class='bx bxs-data'></i>
+        <p>MySQL</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="projects" id="projects" data-aos="fade-up">
+    <h2 class="section-title">My <span>Projects</span></h2>
+    <div class="projects-grid">
+      <div class="project-card">
+        <img src="projek1.png" alt="Project 1">
+        <h3>EcoApp</h3>
+        <p>A Flutter app for tracking recycling activities and eco-points. Built with Firebase and clean UI.</p>
+      </div>
+      <div class="project-card">
+        <img src="projek2.png" alt="Project 2">
+        <h3>MyPortfolio</h3>
+        <p>Personal website with animations, responsive design, and dark mode. Built with HTML, CSS, and JS.</p>
+      </div>
+      <div class="project-card">
+        <img src="projek3.png" alt="Project 3">
+        <h3>Laravel API</h3>
+        <p>RESTful API backend for a marketplace project. Handles user auth, product CRUD, and payment integration.</p>
+      </div>
+      <div class="project-card">
+        <img src="projek6.png" alt="Project 3">
+        <h3>Laravel API</h3>
+        <p>RESTful API backend for a marketplace project. Handles user auth, product CRUD, and payment integration.</p>
+      </div>
+      <div class="project-card">
+        <img src="projek5.png" alt="Project 3">
+        <h3>Laravel API</h3>
+        <p>RESTful API backend for a marketplace project. Handles user auth, product CRUD, and payment integration.</p>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="footer_bar_custom">
+      <div class="footer_left">Wafiyatin</div>
+      <div class="footer_center">
+        <a href="https://instagram.com/username" target="_blank"><i class='bx bxl-instagram'></i></a>
+        <a href="https://github.com/username" target="_blank"><i class='bx bxl-github'></i></a>
+        <a href="https://linkedin.com/in/username" target="_blank"><i class='bx bxl-linkedin'></i></a>
+      </div>
+      <div class="footer_right">Created by Wafi</div>
+
+    </div>
+    <div class="footer_bar">
+      Copyright &copy; 2025 Wafi Portfolio. All rights reserved.
+    </div>
+  </footer>
+
+  <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+  <script>
+    AOS.init({ duration: 1000, once: true });
+
+    const hamburger = document.getElementById("hamburger");
+    const navbar = document.getElementById("navbar");
+
+    hamburger.addEventListener("click", () => {
+      navbar.classList.toggle("active");
+    });
+    document.querySelectorAll("#navbar a").forEach(link => {
+      link.addEventListener("click", () => {
+        navbar.classList.remove("active");
+      });
+    });
+  </script>
+</body>
+
+</html>
