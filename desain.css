@@ -364,7 +364,7 @@ cursor: pointer;
 @media (max-width: 768px) {
 .footer_container {
 grid-template-columns: 1fr;
-gap: 1rem;
+gap: 2rem;
 }
 
 .footer_left,
@@ -378,9 +378,9 @@ font-size: 12px;
 }
 }
 
-@media (max-width: 480px) {
+@media (max-width: 768px) {
 header {
-padding: 14px 1%;
+padding: 15px 1%;
 }
 }
 
