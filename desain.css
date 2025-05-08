@@ -184,12 +184,12 @@ section {
     border-radius: 8px;
     font-weight: bold;
     transition: background-color 0.3s ease;
-  }
-  
-  .btn-download:hover {
+}
+
+.btn-download:hover {
     background-color: #4279b4;
-  }
-  
+}
+
 
 
 .skills {
@@ -322,6 +322,28 @@ section {
     font-size: 16px;
     line-height: 1.7;
 }
+
+.see-more {
+    text-align: center;
+    margin-top: 2rem;
+}
+
+.btn-see-more {
+    display: inline-block;
+    margin-top: 15px;
+    padding: 0.6rem 1rem;
+    background: #fdd835;
+    color: #000;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: 500;
+    transition: background-color 0.3s ease;
+}
+
+.btn-see-more:hover {
+    background-color: var(--primary-color)
+}
+
 
 
 .footer {

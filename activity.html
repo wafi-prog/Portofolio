@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Documentation</title>
+    <style>
+        :root {
+            --primary-color: #d9c179;
+            --bg-color: #1f262c;
+            --text-color: #ffffff;
+            --section-bg: #313b44;
+        }
+
+        body {
+            margin: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-color);
+        }
+
+        h1 {
+            text-align: center;
+            padding: 1rem 0;
+            color: var(--primary-color);
+            font-size: 2.5rem;
+        }
+
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 1.5rem;
+            padding: 1.5rem;
+            background-color: var(--bg-color);
+        }
+
+        .card {
+            background-color: var(--bg-color);
+            border: 1px solid var(--section-bg);
+            border-radius: 10px;
+            overflow: hidden;
+            width: 250px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+            transition: transform 0.3s ease;
+        }
+
+        .card:hover {
+            transform: scale(1.03);
+        }
+
+        .card img {
+            width: 100%;
+            height: 180px;
+            object-fit: cover;
+            display: block;
+        }
+
+        .card-caption {
+            padding: 1rem;
+            font-size: 1rem;
+            text-align: center;
+            font-weight: 500;
+        }
+
+        @media (max-width: 600px) {
+            h1 {
+                font-size: 1.7rem;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Activities Documentation</h1>
+    <div class="container">
+        <div class="card">
+            <img src="kegiatan 6.jpg" alt="Foto 1" />
+            <div class="card-caption">Gerakan IDN Peduli</div>
+        </div>
+        <div class="card">
+            <img src="kegiatan2.jpg" alt="Foto 2" />
+            <div class="card-caption">GDG Event</div>
+        </div>
+        <div class="card">
+            <img src="kegiatan3.jpg" alt="Foto 3" />
+            <div class="card-caption">IDN Mengajar</div>
+        </div>
+        <div class="card">
+            <img src="kegiatan4.jpg" alt="Foto 4" />
+            <div class="card-caption">Lomba Cerdas Cermat</div>
+        </div>
+        <div class="card">
+            <img src="kegiatan5.jpg" alt="Foto 5" />
+            <div class="card-caption">IDN Mengajar</div>
+        </div>
+        <div class="card">
+            <img src="kegiatan7.jpg" alt="Foto 6" />
+            <div class="card-caption">Edurace Bussiness Survival</div>
+        </div>
+        <div class="card">
+            <img src="kegiatan8.jpg" alt="Foto 6" />
+            <div class="card-caption">Laravel Bootcamp</div>
+        </div>
+    </div>
+</body>
+
+</html>
